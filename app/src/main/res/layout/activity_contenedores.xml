@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_clock"
+    tools:context=".Contenedores">
+
+    <ImageButton
+        android:id="@+id/contAzul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/lbl_Azul"
+        android:onClick="goContenedorAzul"
+        app:layout_constraintEnd_toStartOf="@+id/contAmarillo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_contenedores"
+        app:srcCompat="@drawable/contenedor_azul_small" />
+
+    <ImageButton
+        android:id="@+id/contAmarillo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="44dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/lbl_Amarillo"
+        android:onClick="goContenedorAmarillo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_contenedores"
+        app:srcCompat="@drawable/contenedor_amarillo_small" />
+
+    <ImageButton
+        android:id="@+id/contVerde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="44dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/lbl_Verde"
+        android:onClick="goContenedorVerde"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_amarillo"
+        app:srcCompat="@drawable/contenedor_verde_small" />
+
+    <ImageButton
+        android:id="@+id/contNaranja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/lbl_Naranja"
+        android:onClick="goContenedorNaranja"
+        app:layout_constraintEnd_toStartOf="@+id/contVerde"
+        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_azul"
+        app:srcCompat="@drawable/contenedor_naranja_small" />
+
+    <TextView
+        android:id="@+id/lbl_contenedores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="casual"
+        android:text="@string/txt1"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lbl_azul"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:fontFamily="@font/architects_daughter"
+        android:text="@string/lbl_Azul"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contAzul" />
+
+    <TextView
+        android:id="@+id/lbl_amarillo"
+        android:layout_width="111dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="44dp"
+        android:fontFamily="@font/architects_daughter"
+        android:text="@string/lbl_Amarillo"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contAmarillo" />
+
+    <TextView
+        android:id="@+id/lbl_naranja"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:fontFamily="@font/architects_daughter"
+        android:text="@string/lbl_Naranja"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contNaranja" />
+
+    <TextView
+        android:id="@+id/lbl_verde"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:fontFamily="@font/architects_daughter"
+        android:text="@string/lbl_Verde"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contVerde" />
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/boton_back"
+        android:onClick="Volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_naranja"
+        app:layout_constraintVertical_bias="0.666"
+        app:srcCompat="@mipmap/boton_back" />
+
+    <ImageButton
+        android:id="@+id/btn_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/boton_home"
+        android:onClick="goHome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_verde"
+        app:layout_constraintVertical_bias="0.692"
+        app:srcCompat="@mipmap/boton_home" />
+</android.support.constraint.ConstraintLayout>
